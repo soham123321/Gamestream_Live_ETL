@@ -1,38 +1,3 @@
-
-# IST469/769 Midterm Exam Spring 2023
-
-This midterm exam is designed to test your ability to work with data in a distributed environment. You will be working with a simulated lacrosse game stream, and a database of player and team reference data. You will be asked to create a data pipeline that processes the game stream and updates the database tables when the game is over.
-
-This was created originally as a technical assessment for a data engineer position at Sidearm Sports. I have adapted it for this class. It is very challenging, but also very realistic. 
-
-There is a lot of information in this document. Please read it carefully. If you have any questions, please ask them in class on Monday.
-
-## Important Disclaimer
-
-**This is an open book EXAM. The intent is to measure your knowledge of the course material. You are expected to work on this on your own. The exam period begins when this document is released.**
-
-Allowed During the Exam Period:
-
-- All Resources from this class.
-- Content from the internet (pages, videos, posted stack overflow, questions, etc., generally anything you can find with a web search).
-- Whatever we discuss in class on Monday.
-- Asking the instructor for clarification on the Teams Channel ONLY (so everyone sees it).
-
-NOT Allowed During the Exam:
-
-- Bouncing ideas off your classmates, or collaborating on approaches. 
-- Asking another human for clarification, advice, interpretation, or suggestions whether in person or online, whether synchronously or asynchronously.
-- Solutions that use code we didn't learn in the class. Stick to Pyspark SQL, Pyspark Dataframes API, and SQL in Drill. No spark RDD or regular Python.
-- Use of test aid websites like Chegg, Coursehero, etc. These won't be helpful, and they are evil anyways.
-
-## Setup
-
-To get this midterm:
-
-- Open windows powershell
-- `PS> git clone https://github.com/mafudge/ist769sp23midterm.git`
-- `PS> cd ist769sp23midterm`
-
 ## PART 1: The environment:
 
 The environment is a `docker-compose.yaml` file that simulates a distributed environment. It consists of the following services:
