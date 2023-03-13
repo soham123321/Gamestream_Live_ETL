@@ -193,28 +193,6 @@ NOTES:
 
 - We will not update the actual tables. Instead we will create new tables called `teams2` and `players2` with the updated data. It's anti-big data to perform row-level updates. The proper way to move the updates into the original tables would be to write an MSSQL script to update the tables, but that is outside the scope of this exam.
 
-# PART 4: Exam Questions
-
-## Advice for the Best Grade
-
-- Make sure you can connect to `mssql`, `mongodb` and `minio` using both Spark and Drill. Test your connections before you start the exam.
-- Write PySpark and use the DataFrames API. You should NOT need to use RDD or fall back to PoP (plain old Python). While you CAN solve these problems using both of those approaches, that is not what was taught in class. 
-- Brush up on your SQL! You can solve the data transformation questions using pure SQL constructs like window functions, aggregates, unions, joins, and views/common-table expressions.
-- There are many ways to solve these problems. If you get stuck, try a different approach. I expect everyone will have slightly different solutions.
-- Any `.ipynb` files you create should be in the `work` folder!
-
-## Instructions
-
-Each question is worth 6 points. 
-
-NOTE: If you cannot figure out the answer to the question, I suggest writing simpler code and use that as your answer. This way you can complete the next question in the exam. It is better to have running code that is incorrect than code that will not run.
-
-For the highest possible marks, for each question, include:
-1. The TEXT of the code you wrote 
-2. A CLEAR screenshot of your code with your netid in the screenshot. (only screenshot the region, not the entire window!)
-3. A CLEAR screenshot of the output of your code with your netid in the screenshot. (only screenshot the region, not the entire window!)
-4. If know your answer is incorrect, explain what you tried/omitted/did not get correct, by adding comments to your code/commenting out code that does not run. This should appear in your text and screenshot.
-
 ## Questions
 
 1. Write a drill SQL query to list the team and player data. Specifically display team name, team wins, team losses player name, player shots and player goals. 
